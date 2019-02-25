@@ -38,11 +38,11 @@ Setting up plugins can be daunting, and its easy to forget an important one espe
 
 ## Installation
 
-You are required to have npm 8+ and android sdk installed.
+You are required to have the latest npm, cordova and android sdk installed.
 To install this template, run the following command:
 
 ```javascript
-cordova create todo club.eldoretartisans.hello Todo --template https://github.com/chiefbrob/mzi
+cordova create todo club.eldoretartisans.todo Todo --template https://github.com/chiefbrob/mzi
 ```
 
 
