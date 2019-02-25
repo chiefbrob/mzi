@@ -53,7 +53,7 @@ The markup language used is vue because of its immense benefits.
 Inside www/index.html create a new view
 
 ```vue
-<application-view name="todo" auth="none">
+<application-view name="todo">
     <todo></todo>
 </application-view>
 ```
@@ -70,15 +70,12 @@ Vue.component('todo',{
 		};
 	},
 	methods: {
-		create(){
-			if(this.input.length>0)
-			{
-				this.todos.push(input);
-				this.input = '';
-				notify('Todo created');
-			}
+		create_todo(){
+			this.todos.push(input);
+			this.input = '';
+			notify('Todo created');
 		},
-		delete(t){
+		delete_todo(t){
 			var new_todos = [];
 			for(var i=0; i<this.todos.length; i++)
 			{
@@ -99,11 +96,11 @@ Vue.component('todo',{
         <div>
         	<p style="text-align: center">
         		<input type="text" class="form-control" placeholder="create todo" v-model="input" />
-        		<button @click="create" :disabled="input.length = 0">Create</button>
+        		<button @click="create_todo" :disabled="input.length == 0">Create</button>
         	</p>
 
         	<div v-for="t in todos">
-        		{{ t }} <i class="fa fa-trash right-side" @click="delete(t)"></i>
+        		{{ t }} <i class="fa fa-trash right-side" @click="delete_todo(t)"></i>
         	</div>
         </div>
     </div>
@@ -117,7 +114,7 @@ In the home component, add a button that redirects to your todo
 <button @click="navigate('todo')">Show Todo</button>
 ```
 
-The navigate method is a custom method for that in fires the showView event.
+The navigate method is a custom method that in fires the showView event.
 To navigate within your views from within javascript code
 
 ```javascript
@@ -126,7 +123,9 @@ Event.$emit('showView', 'todo');
 showView('todo');
 ```
 
-To persist data
+If the view requires authentication, it would be checked first.
+
+To persist data in local storage
 
 ```javascript
 set('todos',{'go to the bank','go shopping'});
@@ -134,6 +133,43 @@ set('todos',{'go to the bank','go shopping'});
 //some code
 
 var saved_todos = fetch('todos');
+
+```
+
+### Working with apis
+
+First set your url in the url() function then update the api endpoint. 
+
+```javascript
+$.ajax({
+    type: 'POST',
+    url: api('contactUs'), //https://www.yoursite.com/web-api/contactUs
+    data: {
+        name: this.names,
+        email: this.email,
+        message: this.message
+    },
+    success: function(response) {
+
+        if(response == 0)
+        {
+            notify('Thank you for contacting us');
+            scope.reset();
+        }
+        else
+        {
+            error("Failed to send message");
+            log(response);
+            
+        }  
+    },
+    error: function(e) {
+        
+        error("Network error");
+        log(e);
+        
+    },
+});
 
 ```
 
@@ -147,6 +183,8 @@ Mzi framework creates a cordova application.
 cordova run browser
 cordova run android
 ```
+
+For futher reference, kindly visit [Apache Cordova's](https://cordova.apache.org/) main site
 
 ## Deployment
 
