@@ -109,6 +109,9 @@ var app = {
 
             Event.$emit('showView',name);
         }
+        function set(key,value){
+            localStorage.key = str(value);
+        }
         function exists(key){
             if (localStorage.getItem(key) === null) {
                 return false;

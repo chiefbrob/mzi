@@ -62,7 +62,7 @@ Inside www/js/app.js create a new component
 
 
 ```vue
-Vue.component('terms',{
+Vue.component('todo',{
 	data(){
 		return {
 			todos: [],
@@ -99,7 +99,7 @@ Vue.component('terms',{
         <div>
         	<p style="text-align: center">
         		<input type="text" class="form-control" placeholder="create todo" v-model="input" />
-        		<button class="btn btn-success" @click="create" :disabled="input.length = 0">Create</button>
+        		<button @click="create" :disabled="input.length = 0">Create</button>
         	</p>
 
         	<div v-for="t in todos">
@@ -109,6 +109,32 @@ Vue.component('terms',{
     </div>
     `
 });
+```
+
+In the home component, add a button that redirects to your todo
+
+```vue
+<button @click="navigate('todo')">Show Todo</button>
+```
+
+The navigate method is a custom method for that in fires the showView event.
+To navigate within your views from within javascript code
+
+```javascript
+Event.$emit('showView', 'todo');
+//or
+showView('todo');
+```
+
+To persist data
+
+```javascript
+set('todos',{'go to the bank','go shopping'});
+
+//some code
+
+var saved_todos = fetch('todos');
+
 ```
 
 
@@ -125,6 +151,8 @@ cordova run android
 ## Deployment
 
 Change the vue version to production by referencing js/vue.min.js in your index.html
+
+Currently working on the backend with laravel to complete the development chain. This can be found [here](https://github.com/chiefbrob/mzae) once made available
 
 ## Contribution
 
