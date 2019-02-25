@@ -42,7 +42,7 @@ You are required to have npm 8+ and android sdk installed.
 To install this template, run the following command:
 
 ```javascript
-cordova create hello club.eldoretartisans.hello HelloWorld --template templates/mzi
+cordova create todo club.eldoretartisans.hello Todo --template https://github.com/chiefbrob/mzi
 ```
 
 
@@ -77,6 +77,17 @@ Vue.component('terms',{
 				this.input = '';
 				notify('Todo created');
 			}
+		},
+		delete(t){
+			var new_todos = [];
+			for(var i=0; i<this.todos.length; i++)
+			{
+				if(t != this.todos[i])
+					new_todos.push(this.todos[i]);
+
+			}
+			this.todos = new_todos;
+			error("Todo deleted");
 		}
 	},
     template: `
@@ -92,7 +103,7 @@ Vue.component('terms',{
         	</p>
 
         	<div v-for="t in todos">
-        		{{ t }}
+        		{{ t }} <i class="fa fa-trash right-side" @click="delete(t)"></i>
         	</div>
         </div>
     </div>
