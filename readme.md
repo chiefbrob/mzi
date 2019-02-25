@@ -2,9 +2,11 @@
 
 Have you worked on a hybrid application and got tired of the amount of boilerplate you have to deal with to have a minimum viable product/prototype? Not anymore!
 
+## About Mzi
+
 Mzi Framework is a comprehensive cordova template that will enable you to generate the necessary boilerplate code you need to make an application.
 
-# Plugins included
+## Plugins included
 
 Setting up plugins can be daunting, and its easy to forget an important one especially if you work on several projects.
 
@@ -21,7 +23,102 @@ Setting up plugins can be daunting, and its easy to forget an important one espe
 11. cordova-plugin-ionic-webview
 12. cordova-plugin-ionic-keyboard
 
+## Platforms included
 
++ Android 
++ Browser (for development)
+
+## Others included
+
+- Vue JS
+- jQuery
+- Font awesome
+- Bootstrap
+- Notify JS
+
+## Installation
+
+You are required to have npm 8+ and android sdk installed.
 To install this template, run the following command:
 
+```javascript
 cordova create hello club.eldoretartisans.hello HelloWorld --template templates/mzi
+```
+
+
+## Code syntax
+
+The markup language used is vue because of its immense benefits. 
+
+Inside www/index.html create a new view
+
+```vue
+<application-view name="todo" auth="none">
+    <todo></todo>
+</application-view>
+```
+
+Inside www/js/app.js create a new component 
+
+
+```vue
+Vue.component('terms',{
+	data(){
+		return {
+			todos: [],
+			input: ''
+		};
+	},
+	methods: {
+		create(){
+			if(this.input.length>0)
+			{
+				this.todos.push(input);
+				this.input = '';
+				notify('Todo created');
+			}
+		}
+	},
+    template: `
+    <div>
+        <application-viewheader>
+            ToDo App
+        </application-viewheader>
+        
+        <div>
+        	<p style="text-align: center">
+        		<input type="text" class="form-control" placeholder="create todo" v-model="input" />
+        		<button class="btn btn-success" @click="create" :disabled="input.length = 0">Create</button>
+        	</p>
+
+        	<div v-for="t in todos">
+        		{{ t }}
+        	</div>
+        </div>
+    </div>
+    `
+});
+```
+
+
+## Usage
+
+Mzi framework creates a cordova application. 
+
+
+```javascript
+cordova run browser
+cordova run android
+```
+
+## Deployment
+
+Change the vue version to production by referencing js/vue.min.js in your index.html
+
+## Contribution
+
+If there exists bugs or points of correction, kindly email [Brian Obare](mailto:brianobare@gmail.com). All issues raised will be looked into and addressed.
+
+## License
+
+I dont know much, just use it and do good. With love from [Eldoret Artisans](https://eldoretartisans.club)
