@@ -1,0 +1,232 @@
+html,body {
+	height: 100%;
+	margin:0;
+	padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover 
+{
+     text-decoration:none; 
+     cursor:default;  
+}
+
+
+
+#application {
+	margin: 0;
+	padding: 0; 
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	width: 100%;
+	
+}
+
+#application-header {
+	border-bottom:  0.1em solid #FAFAFA;
+	color: #246a84;
+}
+
+#backButton {
+	float: left; 
+	margin:0.8em 0 0.8em 0.5em;
+}
+
+#application-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #FDFDF0;
+	z-index: 500;
+	font-size: 120%;
+	overflow: hidden;
+	
+}
+
+.overlay {
+	z-index: 501;
+}
+
+.application-view {
+
+	padding: 0.3em 0 1em 0;
+
+}
+
+#application-body {
+	height: 85%;
+	overflow: hidden;
+}
+
+#application-header h4 {
+	overflow: hidden; 
+	padding: 0.2em 0;
+}
+
+#application-header h4 img {
+	width: 3em; 
+	position: absolute; 
+	left: 41%; 
+	margin: 0.1em 0; 
+}
+
+.application-footerTab {
+	width: 28.3%;
+	margin: 0.2em 2.5%;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+.application-footerTab i {
+	color: gold;
+}
+
+.application-footerTab i:hover {
+	cursor: pointer;
+}
+
+.application-footerTab .active {
+	color: #246a84;
+}
+
+.application-view {
+	width: 98%;
+	margin-left: 1%;
+	padding-bottom: 2em;
+}
+
+#loginText {
+	color: green;
+}
+
+
+
+
+
+
+
+
+
+
+.splash {
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left:0;
+	height: 100%;
+	text-align: center;
+	background-color: white;
+	color: black;
+	padding: 10em 0;
+	text-align: center;
+}
+
+
+.splash div {
+	margin-top: 15%;
+	font-weight: bold;
+}
+
+
+.splash div img {
+	width: 40%;
+}
+
+.splash div h2 {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile {
+	width: 98%;
+	margin: 0 1%;
+}
+
+
+.profile-header {
+	overflow: hidden;
+	text-align: center;
+	font-size: 85%;
+}
+
+.profile img {
+	width: 40%;
+	margin: 0.5em;
+	border-radius: 50%;
+	float: left;
+}
+
+.profile img:hover {
+	
+}
+
+.profile-details {
+	width: 46%;
+	overflow: hidden;
+	padding: 1em 2%;
+	text-align: center;
+}
+
+.profile-details h5:hover {
+	
+}
+
+.profile-links {
+	padding-top: 1em;
+	border-top: 0.1em solid black;
+}
+.profile-links div {
+	width: 89%;
+	padding: 0.2em 0;
+	margin: 0 5% 0.3em 5%;
+	overflow: hidden;
+}
+
+.profile-links div:hover {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

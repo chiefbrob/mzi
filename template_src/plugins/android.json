@@ -1,0 +1,60 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-webpack": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "club.eldoretartisans.mzi"
+    }
+  }
+}

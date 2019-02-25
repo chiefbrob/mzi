@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Mzi",
+  "short_name": "Mzi",
+  "version": "club.eldoretartisans.mzi",
+  "description": "A Comprehensive cordova template for mobile",
+  "author": "Eldoret Artisans",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#FFFFFF"
+}

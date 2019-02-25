@@ -1,0 +1,160 @@
+.right-side {
+	float:right;
+}
+
+.middle {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.half {
+	width: 49.9%;
+	float: left;
+}
+
+.created_at {
+	float: right;
+}
+
+.bigger {
+	font-size: 130%;
+}
+
+.center-50 {
+	width: 50%;
+	position: relative;
+	left: 25%;
+}
+
+.center-70 {
+	width: 80%;
+	position: relative;
+	left: 10%;
+}
+
+.button {
+	padding: 0.5em;
+	text-decoration: none;
+	border-radius: 5%;
+	cursor: default;
+}
+
+.white-button {
+	background-color: white;
+	border: 0.1em solid black;
+	color: black;
+}
+
+.black-button {
+	background-color: black;
+	border: 0.1em solid white;
+	color: white;
+}
+
+.green-button {
+	background-color: green;
+	border: 0.1em solid green;
+	color: white;
+}
+
+.blue-button {
+	background-color: blue;
+	border: 0.1em solid blue;
+	color: white;
+}
+
+.red-button {
+	background-color: red;
+	border: 0.1em solid red;
+	color: white;
+}
+
+.pink-button {
+	background-color: pink;
+	border: 0.1em solid pink;
+	color: white;
+}
+
+.portable {
+	display: none;
+}
+
+.can-hover:hover {
+	font-weight: bold;
+}
+
+
+
+
+
+
+#container {
+	width: 30%;
+	left: 35%;
+
+}
+
+
+
+body {
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+hr {
+	clear: both;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+	#container {
+		width: 50%;
+		left: 25%;
+		font-size: 95%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#container {
+		width: 80%;
+		left: 10%;
+		font-size: 85%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+
+	.unportable {
+		display: none;
+	}
+
+	.portable {
+		display: block;
+	}
+	.center-50 {
+		width: 99%;
+		position: relative;
+		left: 0%;
+	}
+
+	.center-70 {
+		width: 99%;
+		position: relative;
+		left: 0%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#container {
+		width: 99%;
+		left: 0%;
+		font-size: 80%;
+	}
+}

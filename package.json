@@ -1,0 +1,20 @@
+{
+  "name": "cordova-template-mzi",
+  "version": "1.0.0",
+  "description": "A Comprehensive cordova template for mobile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chiefbrob/mzi.git"
+  },
+  "homepage": "https://mzi.eldoretartisans.club",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova:template"
+  ],
+  "author": "Eldoret Artisans",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://* 'unsafe-inline'; media-src *; script-src 'self' https://* 'unsafe-eval' 'unsafe-inline'; img-src 'self' https://* data: content:;connect-src *; font-src 'self' https://* data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"> -->
+        <meta name="viewport" content="user-scalable=no,width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        
+        <title>Mzi</title>
+
+        <link rel="icon" href="img/logo.png">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/notify-metro.css">
+        <link href="css/overlay.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/grt-custom.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/app.css" rel="stylesheet" type="text/css" media="all">
+        
+        
+    </head>
+    <body>
+        <div id="application" class="hidden">
+
+            <application-header></application-header>
+
+
+
+            <application-body>
+
+                <application-view name="login" auth="none">
+                    <application-viewheader>
+                        Login
+                    </application-viewheader>
+
+                    <login></login>
+                </application-view>
+
+                <application-view name="reset" auth="none">
+                    <application-viewheader>
+                        Reset Password
+                    </application-viewheader>
+                    <reset></reset>
+                </application-view>
+
+                <application-view name="register" auth="none">
+                    <application-viewheader>
+                        Register
+                    </application-viewheader>
+                    <register></register>
+                </application-view>
+
+                
+
+
+
+
+                <application-view name="splash" :active="true">
+                    <div>
+                        <img src="img/logo.png">
+                        <br>
+                        <h2>
+                            Mtengenezi
+                        </h2>
+                    </div>
+                    
+                    
+                </application-view>
+
+
+                <application-view name="terms">
+                    <application-viewheader>
+                        Terms and Conditions
+                    </application-viewheader>
+                    <terms></terms>
+                </application-view>
+
+                <application-view name="contact">
+                    <application-viewheader>
+                        Contact us
+                    </application-viewheader>
+
+                    <contactform></contactform>
+
+                    
+                </application-view>
+
+                <application-view name="about">
+                    <application-viewheader>
+                        About us
+                    </application-viewheader>
+                    <about></about>
+                </application-view>
+
+                <application-view name="home">
+                    <home></home>
+                </application-view>
+
+                <application-view name="editProfile" auth="required">
+                    <application-viewheader>
+                        Edit Profile
+                    </application-viewheader>
+                    <editprofile></editprofile>
+                </application-view>
+
+                
+
+                <application-view name="profile" auth="required">
+                    <profile></profile>
+                </application-view>
+
+                <application-view name="explore">
+                    <application-viewheader>
+                        Explore
+                    </application-viewheader>
+                    <explore></explore>
+                </application-view>
+
+
+                
+                
+
+
+            </application-body>
+            
+
+    
+            <application-footer>
+                <application-footertab name="home" icon="home" :active="true"></application-footertab>
+                <application-footertab name="explore" icon="search"></application-footertab>
+                <application-footertab name="profile" icon="user"></application-footertab>
+            </application-footer>
+
+            
+        </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/notify.js"></script>
+        <script type="text/javascript" src="js/notify-metro.js"></script>
+        <script type="text/javascript" src="js/vue.min.js"></script>       
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
