@@ -1,14 +1,14 @@
 # Mzi Framework
 
-Have you worked on a hybrid application and got tired of the amount of boilerplate you have to deal with to have a minimum viable product/prototype? Not anymore!
+Have you worked on a hybrid application and got tired of the amount of scaffolding you have to deal with to have a minimum viable product/prototype? Not anymore!
 
 ## About Mzi
 
-Mzi Framework is a comprehensive cordova template that will enable you to generate the necessary boilerplate code you need to make an application.
+Mzi Framework is a comprehensive cordova template that will enable you to generate the necessary scaffolding code you need to make an application.
 
 ## Plugins included
 
-Setting up plugins can be daunting, and its easy to forget an important one especially if you work on several projects.
+Its easy to forget a necessary plugin, especially if you work on several projects - so we've got you covered.
 
 1. cordova-plugin-webpack
 2. cordova-plugin-camera
@@ -27,6 +27,20 @@ Setting up plugins can be daunting, and its easy to forget an important one espe
 
 + Android 
 + Browser (for development)
+
+## Platforms that can be added
+
+To add a new platform:
+
+```javascript
+cordova add ios
+```
+
++ ios (Mac needed)
++ osx (Mac needed)
++ windows (Windows 10 PC required)
+
+* You can use [virtual box](https://virtualbox.org) if you don't have access to a Mac
 
 ## Others included
 
@@ -154,7 +168,6 @@ $.ajax({
         if(response == 0)
         {
             notify('Thank you for contacting us');
-            scope.reset();
         }
         else
         {
@@ -192,10 +205,16 @@ Change the vue version to production by referencing js/vue.min.js in your index.
 
 Currently working on the backend with laravel to complete the development chain. This can be found [here](https://github.com/chiefbrob/mzae) once made available
 
+## Sponsors
+
+We would like to extend our thanks to the following sponsors for helping fund on-going Mzi framework development:
+
+- **[Eldoret Artisans](https://eldoretartisans.club/)**
+
 ## Contribution
 
 If there exists bugs or points of correction, kindly email [Brian Obare](mailto:brianobare@gmail.com). All issues raised will be looked into and addressed.
 
 ## License
 
-I dont know much, just use it and do good. With love from [Eldoret Artisans](https://eldoretartisans.club)
+Mzi framework is an open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
